@@ -21,7 +21,7 @@ const HEADERS = {
     'Te': 'trailers'
 }
 
-async function getWalletLinkState(session_signature) {
+async function getWalletLinkState() {
     return await axios.get('https://mefoundation.com/api/trpc/auth.walletLinkState', {
         params: {
             batch: 1,
@@ -68,7 +68,7 @@ async function unlinkWalletWithRetry(address) {
 
 async function unlinkAllWallets() {
     try {
-        const response = await getWalletLinkState(session_signature);
+        const response = await getWalletLinkState();
         const wallets = response[0]["result"]["data"]["json"]["state"];
 
         console.log(JSON.stringify(response, null, 4));
