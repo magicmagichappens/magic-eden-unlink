@@ -1,9 +1,9 @@
 const axios = require('axios');
 
-const session_signature = "FILL-YOUR-SESSION-SIGNATURE-HERE"
+const COOKIE = "FILL-YOUR-COOKIE-HERE"
 
 const HEADERS = {
-    'Cookie': `session_signature=${session_signature}`,
+    'Cookie': COOKIE,
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:133.0) Gecko/20100101 Firefox/133.0',
     'Accept': 'application/json',
     'Accept-Language': 'en-US,en;q=0.5',
