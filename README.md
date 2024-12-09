@@ -29,12 +29,12 @@ This project requires the axios package for making HTTP requests. You can instal
 npm install
 ```
 
-### 3. Set Up session_signature
-The session_signature is used for authentication with the platform's API. Ensure you have a valid session_signature and update the session_signature variable in the index.js file with the correct value:
-Watch this to know how to get: 
+### 3. Set Up Cookie
+The Cookie is used for authentication with the platform's API. Ensure you have a valid cookie and update the COOKIE variable in the index.js file with the correct value:
+Watch this below video and this time instead of copying session_signature, copy the whole cookie value:  
 [Video](https://discord.com/channels/907946085014704128/1314823725383942234/1315385634369703987)
 ```javascript
-const session_signature = "your-session-signature-here";
+const COOKIE = "cf_clearance=9BiPRW3JvjSYpiWQS7_SAMPLE; session_signature=2CiTUTE8scyQMz_SAMPLE";
 ```
 
 
